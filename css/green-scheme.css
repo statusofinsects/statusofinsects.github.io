@@ -410,6 +410,7 @@ textarea:focus {
   background-color: #63bc63;
   padding: 7px 17px;
   color: white;
+  font-color: white;
   display: inline-block;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
