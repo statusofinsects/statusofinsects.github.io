@@ -1,6 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.sng {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.def {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Status of Insects: An International Research Coordination Network</title>
@@ -37,8 +99,6 @@
 </ul>
 </li>
 
-  <!--this is where the menu is-->
-
 <li><a href="working-groups.html">Working Groups</a>
 <ul>
 <li><a href="working-groups.html#data-aggregation">Data Aggregation</a></li>
@@ -52,12 +112,13 @@
 <li><a href="products.html">Products</a>
 <ul>
 
-<!--Check the "h1" and <p> to check formatting--> 
-<!--DOI links for publications--> 
-<!--CASEY ctrl shift f, link to file,find teh exact line of code uyou want to replace, then browse to find it only in the specific website file. WHen you find it, you will find it in the evviroment windo. Then go to the "replace" and paste the new destination -->
 <li><a href="products-publications.html">Publications</a></li>
 <li><a href="products-data-and-database.html">Data & Databases</a></li>
-<li><a href="products-meetings-and-symposium.html">Meetings & Symposia</a></li><li><a href="products-webinars.html">Webinars</a></li> <li><a href="products-presentations.html">Presentations</a></li> <li><a href="products-media-and-press.html">Media & Press</a></li> <li><a href="products-educational-materials.html">Educational Materials</a></li>
+<li><a href="products-meetings-and-symposium.html">Meetings & Symposia</a></li>
+<li><a href="products-webinars.html">Webinars</a></li>
+<li><a href="products-presentations.html">Presentations</a></li>
+<li><a href="products-media-and-press.html">Media & Press</a></li>
+<li><a href="products-educational-materials.html">Educational Materials</a></li>
 </ul>
 </li>
 <li><a href="resources.html">Resources</a>
@@ -68,7 +129,7 @@
 </ul>
 </li>
 
- 
+
 
 <li><a href="contact.html">Get Involved</a></li>
 </ul> <!-- /.main_menu -->
@@ -116,7 +177,11 @@
 
 <li><a href="products-publications.html">Publications</a></li>
 <li><a href="products-data-and-database.html">Data & Databases</a></li>
-<li><a href="products-meetings-and-symposium.html">Meetings & Symposia</a></li><li><a href="products-webinars.html">Webinars</a></li> <li><a href="products-presentations.html">Presentations</a></li> <li><a href="products-media-and-press.html">Media & Press</a></li> <li><a href="products-educational-materials.html">Educational Materials</a></li>
+<li><a href="products-meetings-and-symposium.html">Meetings & Symposia</a></li>
+<li><a href="products-webinars.html">Webinars</a></li>
+<li><a href="products-presentations.html">Presentations</a></li>
+<li><a href="products-media-and-press.html">Media & Press</a></li>
+<li><a href="products-educational-materials.html">Educational Materials</a></li>
 </ul>
 </li>
 <li><a href="resources.html">Resources</a>
@@ -148,19 +213,64 @@
 
 
 
+<style>
+.floating-menu {
+font-family: sans-serif;
+background: #63bc63;
+padding: 5px;;
+width: 180px;
+z-index: 100;
+position: fixed;
+}
+.floating-menu a, 
+.floating-menu h3 {
+font-size: 0.9em;
+display: block;
+margin: 0 0.5em;
+color: white;
+}
+</style>
 
-	<section>
-		    <div class="container home-intro-content">
-		        <div class="row">
-		        	<div class="col-md-12">
-<p ><b style='color:red'>Note: the data gathering for the map below is in progress; please check back later.</b></p>
+<!--The Side Section--> 
 
-		        	  <h1>Insect Monitoring Programs</h1>
-<p>
-If you know of a long-term insect monitoring program that is not currently included in this map, we want to know about it! For this resource, we are only including sites that are specifically monitoring insects (as opposed to long-term ecological research where there is typically some type of experimental manipulation) and that have operated or plan to operate for at least a decade. For other types of long-term insect datasets, see the EntoGEM project. Please email the Program Coordinator, Eliza Grames (egrames@binghamton.edu), with questions or to add your monitoring site to the directory. 
-</p>
-<center>
-		        	  <iframe src="monitoring-sites.html" width="1000px", height="600px"></iframe></center>
+<div class="container home-intro-content">
+<div class="row" style="display: flex">
+
+
+</nav>
+</div>
+<div class="col-md-10" style="padding-left:50px">
+
+
+<!--Presentation section--> 
+<div class="row">
+<a id="presentation" class="anchor"></a>
+<h1>Presentation</h1>
+
+<h2 style="color:red;">!Under Construction!</p2>
+
+<p style="color:red;">We are currently working on updating the website! Stay tuned to exploring these new pages!</p>
+
+
+</div>
+
+
+  
+</div>
+</div>
+
+
+</div>
+
+
+			</div>
+			</div>
+						</div>
+			</div>
+
+
+		</div> <!-- /.container -->
+	</section> <!-- /.services -->
 		        	</div> <!-- /.col-md-12 -->
 		        </div> <!-- /.row -->
 		    </div> <!-- /.container -->
